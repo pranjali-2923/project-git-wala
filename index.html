@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student JSON Widget</h2>
+
+<button onclick="show('name')">name</button>
+<button onclick="show('age')">age</button>
+<button onclick="show('city')">city</button>
+
+
+<p id="output" style="font-size:20px; margin-top:20px;"></p>
+
+<script>
+  const data = {
+    "name": "Priya",
+    "age": 28,
+    "city": "Pune",
+    "isStudent": true,
+    "marks": 85,
+    "hobbies": ["reading", "coding"]
+  };
+
+  function show(key) {
+    document.getElementById("output").innerText = key + " : " + data[key];
+  }
+</script>
+
+</body>
+</html>
